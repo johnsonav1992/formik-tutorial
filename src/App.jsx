@@ -9,6 +9,7 @@ import {
 
 // Utils
 import { phoneRegex } from './utils'
+import formikLogo from './assets/formik-logo.png'
 import { formFields } from './formFields'
 
 // Styles
@@ -18,7 +19,7 @@ function App() {
 
   const classes = {
     field: {
-      width: '90%'
+      width: '95%'
       , minHeight: '1.25rem'
     }
     , form: { 
@@ -33,6 +34,12 @@ function App() {
     }
     , error: {
       color: 'red'
+    }
+    , title: {
+      margin: '0 0 1.5rem 0'
+    }
+    , submitBtn: {
+      width: '100%'
     }
   }
 
@@ -66,9 +73,15 @@ function App() {
 
   return (
     <>
-      <h1>
-        {'<Formik /> Tutorial'}
-      </h1>
+      <div>
+          <img 
+            src={ formikLogo } 
+            alt="formik logo" 
+          /> 
+          <h1 style={ classes.title }>
+            { ' Tutorial' }
+          </h1>
+      </div>
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}
@@ -147,7 +160,10 @@ function App() {
                 />
               </>
             ))} */}
-            <button type='submit'>
+            <button 
+              type='submit'
+              style={ classes.submitBtn }
+            >
               Submit
             </button>
           </Form>
