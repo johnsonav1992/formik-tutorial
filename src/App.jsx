@@ -69,6 +69,7 @@ function App() {
 
   const handleSubmit = (values) => {
     console.log('do stuff with this', values)
+    alert(`Form Submitted! - ${JSON.stringify(values)}`)
   }
 
   return (
