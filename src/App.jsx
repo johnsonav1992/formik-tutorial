@@ -89,7 +89,7 @@ function App() {
             <ErrorMessage 
               name='firstName' 
               style={ { color: 'red' } } 
-              component='p' 
+              component='div' 
             />
             <label htmlFor='lasstName'>
               Last Name
@@ -102,7 +102,7 @@ function App() {
             <ErrorMessage 
               name='lastName' 
               style={ { color: 'red' } } 
-              component='p' 
+              component='div' 
             />
             <label htmlFor='email'>
               Email
@@ -115,7 +115,7 @@ function App() {
             <ErrorMessage 
               name='email' 
               style={ { color: 'red' } } 
-              component='p' 
+              component='div' 
             />
             <label htmlFor='phone'>
               Phone
@@ -128,7 +128,7 @@ function App() {
             <ErrorMessage 
               name='phone' 
               style={ { color: 'red' } } 
-              component='p' 
+              component='div' 
             />
             {/* { formFields.map(field => (
               <>
