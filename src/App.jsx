@@ -5,7 +5,7 @@ import {
   , Field
   , ErrorMessage 
 } from 'formik'
-  import * as Yup from 'yup'
+import * as Yup from 'yup'
 
 // Utils
 import { phoneRegex } from './utils'
